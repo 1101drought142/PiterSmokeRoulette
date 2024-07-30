@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="{% static 'index.css' %}">
+  <title>Document</title>
+</head>
+<body>
+  
+  <header class="header">
+    <a href="./" class="header__logo">
+      <img class="header__logo--img" src="/img/logo.png" alt="">
+    </a>
+
+    <div class="bonuses header-bonuses">
+      <img class="bonuses__img" src="/img/coin.svg" alt="">
+      <span class="bonuses__amount">1702</span>
+    </div>
+    <a href="/cart" class="header-cart">
+      <img src="/img/cart.svg" alt="" class="header-cart__img">
+    </a>
+  </header>
+
+  <a href="./" class="back-btn">Назад</a>
+  <main class="lucky-main"
+    data-win-icon-link="/img/zeekr.png"
+    data-win-text="Поздравляем! Вы выиграли! Скоро с вами свяжутся для передачи приза"
+    data-loss-text="К сожалению, в этот раз не повезло. Попробуйте ещё!"
+  >
+    <h1 class="lucky__title">Испытай удачу!</h1>
+
+    <div class='lucky__roulette roulette-wrapper'>
+      <div class='selector'></div>
+      <div class='wheel'>
+      </div>
+    </div>
+
+    <p class="lucky__description">Крути рулетку и получи возможность выиграть приз!</p>
+    <!-- <input placeholder='outcome'> -->
+    <button class="lucky__button">
+      <span class="lucky__button-text">Испытать удачу</span>
+      <div class="bonuses lucky__button-bonuses">
+        <img class="bonuses__img" src="/img/coin.svg" alt="">
+        <span class="bonuses__amount">1702</span>
+      </div>
+    </button>
+  </main>
+
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
