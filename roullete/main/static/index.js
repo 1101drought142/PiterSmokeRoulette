@@ -10,10 +10,10 @@ const swiper = new Swiper('.hero-swiper', {
 });
 
 const rouletteWrap = document.querySelector('.lucky-main');
-const winImg = rouletteWrap.getAttribute('data-win-icon-link');
-const winText = rouletteWrap.getAttribute('data-win-text');
-const lossText = rouletteWrap.getAttribute('data-loss-text');
 
+  const winImg = rouletteWrap.getAttribute('data-win-icon-link');
+  const winText = rouletteWrap.getAttribute('data-win-text');
+  const lossText = rouletteWrap.getAttribute('data-loss-text');
 const description = document.querySelector('.lucky__description');
 const defaultDescription = 'Крути рулетку и получи возможность выиграть приз!';
 

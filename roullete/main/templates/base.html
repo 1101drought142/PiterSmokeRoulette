@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="{% static 'index.css' %}">
+  <title>Document</title>
+</head>
+<body>
+  
+  <header class="header">
+    <a href="./" class="header__logo">
+      <img class="header__logo--img" src="/img/logo.png" alt="">
+    </a>
+
+    <div class="bonuses header-bonuses">
+      <img class="bonuses__img" src="/img/coin.svg" alt="">
+      <span class="bonuses__amount">1702</span>
+    </div>
+    <a href="/cart" class="header-cart">
+      <img src="/img/cart.svg" alt="" class="header-cart__img">
+    </a>
+  </header>
+  {% block content %}{% endblock content %}
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="{% static 'index.js' %} "></script>
+</body>
+</html>

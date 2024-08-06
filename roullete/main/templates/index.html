@@ -1,46 +1,21 @@
+{% extends "base.html" %}
+
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
-  <link rel="stylesheet" href="{% static 'index.css' %}">
-  <title>Document</title>
-</head>
-<body>
-  
-  <header class="header">
-    <a href="./" class="header__logo">
-      <img class="header__logo--img" src="/img/logo.png" alt="">
-    </a>
-
-    <div class="bonuses header-bonuses">
-      <img class="bonuses__img" src="/img/coin.svg" alt="">
-      <span class="bonuses__amount">1702</span>
-    </div>
-    <a href="/cart" class="header-cart">
-      <img src="/img/cart.svg" alt="" class="header-cart__img">
-    </a>
-  </header>
-
+{% block content %}
   <section class="hero-sec">
     <div class="swiper hero-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="/img/banner.jpg" alt="">
+          <img src="{% static '/img/banner.jpg' %}" alt="">
         </div>
         <div class="swiper-slide">
-          <img src="/img/banner.jpg" alt="">
+          <img src="{% static '/img/banner.jpg' %}" alt="">
         </div>
         <div class="swiper-slide">
-          <img src="/img/banner.jpg" alt="">
+          <img src="{% static '/img/banner.jpg' %}" alt="">
         </div>
         <div class="swiper-slide">
-          <img src="/img/banner.jpg" alt="">
+          <img src="{% static '/img/banner.jpg' %}" alt="">
         </div>
       </div>
     </div>
@@ -52,73 +27,70 @@
   <main class="catalog">
     <div class="catalog-item">
       <div class="catalog-item__img-wrap">
-        <img src="/img/zeekr.png" alt="" class="catalog-item__img">
+        <img src="{% static '/img/zeekr.png' %}" alt="" class="catalog-item__img">
       </div>
       <div class="catalog-item__title">СУПЕР ПРИЗ</div>
        <div class="bonuses catalog-item__bonuses">
-        <img class="bonuses__img" src="/img/coin.svg" alt="">
+        <img class="bonuses__img" src="{% static '/img/coin.svg' %}" alt="">
         <span class="bonuses__amount">17</span>
       </div>
-      <a href="/item.html" class="catalog-item__btn">Играть</a>
+      <a href="/item/" class="catalog-item__btn">Играть</a>
     </div>
     <div class="catalog-item">
       <div class="catalog-item__img-wrap">
-        <img src="/img/floppa.png" alt="" class="catalog-item__img">
+        <img src="{% static '/img/floppa.png' %}" alt="" class="catalog-item__img">
       </div>
       <div class="catalog-item__title">СУПЕР ПРИЗ</div>
        <div class="bonuses catalog-item__bonuses">
-        <img class="bonuses__img" src="/img/coin.svg" alt="">
+        <img class="bonuses__img" src="{% static '/img/coin.svg' %}" alt="">
         <span class="bonuses__amount">17</span>
       </div>
-      <a href="/item.html" class="catalog-item__btn">Играть</a>
+      <a href="/item/" class="catalog-item__btn">Играть</a>
     </div>
     <div class="catalog-item">
       <div class="catalog-item__img-wrap">
-        <img src="/img/hoodie.png" alt="" class="catalog-item__img">
+        <img src="{% static '/img/hoodie.png' %}" alt="" class="catalog-item__img">
       </div>
       <div class="catalog-item__title">СУПЕР ПРИЗ</div>
        <div class="bonuses catalog-item__bonuses">
-        <img class="bonuses__img" src="/img/coin.svg" alt="">
+        <img class="bonuses__img" src="{% static '/img/coin.svg' %}" alt="">
         <span class="bonuses__amount">172</span>
       </div>
-      <a href="/item.html" class="catalog-item__btn">Играть</a>
+      <a href="/item/" class="catalog-item__btn">Играть</a>
     </div>
     <div class="catalog-item">
       <div class="catalog-item__img-wrap">
-        <img src="/img/zeekr.png" alt="" class="catalog-item__img">
+        <img src="{% static '/img/zeekr.png' %}" alt="" class="catalog-item__img">
       </div>
       <div class="catalog-item__title">СУПЕР ПРИЗ</div>
        <div class="bonuses catalog-item__bonuses">
-        <img class="bonuses__img" src="/img/coin.svg" alt="">
+        <img class="bonuses__img" src="{% static '/img/coin.svg' %}" alt="">
         <span class="bonuses__amount">17</span>
       </div>
-      <a href="/item.html" class="catalog-item__btn">Играть</a>
+      <a href="/item/" class="catalog-item__btn">Играть</a>
     </div>
     <div class="catalog-item">
       <div class="catalog-item__img-wrap">
-        <img src="/img/floppa.png" alt="" class="catalog-item__img">
+        <img src="{% static '/img/floppa.png' %}" alt="" class="catalog-item__img">
       </div>
       <div class="catalog-item__title">СУПЕР ПРИЗ</div>
        <div class="bonuses catalog-item__bonuses">
-        <img class="bonuses__img" src="/img/coin.svg" alt="">
+        <img class="bonuses__img" src="{% static '/img/coin.svg' %}" alt="">
         <span class="bonuses__amount">17</span>
       </div>
-      <a href="/item.html" class="catalog-item__btn">Играть</a>
+      <a href="/item/" class="catalog-item__btn">Играть</a>
     </div>
     <div class="catalog-item">
       <div class="catalog-item__img-wrap">
-        <img src="/img/floppa.png" alt="" class="catalog-item__img">
+        <img src="{% static '/img/floppa.png' %}" alt="" class="catalog-item__img">
       </div>
       <div class="catalog-item__title">СУПЕР ПРИЗ</div>
        <div class="bonuses catalog-item__bonuses">
-        <img class="bonuses__img" src="/img/coin.svg" alt="">
+        <img class="bonuses__img" src="{% static '/img/coin.svg' %}" alt="">
         <span class="bonuses__amount">17</span>
       </div>
-      <a href="/item.html" class="catalog-item__btn">Играть</a>
+      <a href="/item/" class="catalog-item__btn">Играть</a>
     </div>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="index.js"></script>
-</body>
-</html>
+{% endblock content %}
